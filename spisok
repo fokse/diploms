@@ -1,0 +1,56 @@
+'''
+
+                            Online Python Compiler.
+                Code, Compile, Run and Debug python program online.
+Write your code in this editor and press "Run" button to execute it.
+
+'''
+
+print("Hello World")
+
+import random
+
+for telo in range(10):
+    nalichieshapula=random.randint(0,1)
+    #if nalichieshapula==1:
+    #    shapula=random.choice(['pumpon','gopstop','keparik','ushanka','kandibober','shlapa'])
+    #else: shapula=0
+
+    #if shapula==0:
+    #    pricha=random.choice(['Long','Korotkie','xvost','lysina'])
+    #else: pricha=random.choice(['Long','Korotkie','xvost'])
+    pricha=random.choice(['Long','Korotkie','xvost','lysina'])
+
+    nalichieboroda=random.randint(0,1)
+    
+    if nalichieboroda==1 or pricha=='lysina' :
+        borodaebalo=random.choice(['boroda','moustache'])
+        
+        niz=random.choice(['bruki','jeans','short'])
+        if  niz!='short':
+            verh=random.choice(['pidzak','rubashka','kardigun','tshirt'])
+        else : verh=random.choice(['rubashka','tshirt'])
+
+        shoes=random.choice(['tufli','sneakers','botinki'])
+        
+        ves=random.randint(65,120)
+        
+    else:
+        borodaebalo=0
+
+        niz=random.choice(['bruki','skirt','jeans','short','dress'])
+        if niz=='dress':
+            verh=niz
+        elif niz!='short':
+            verh=random.choice(['pidzak','rubashka','kardigun','tshirt'])
+        else : verh=random.choice(['rubashka','tshirt'])
+
+        shoes=random.choice(['tufli','baletki','sneakers','botinki'])
+        
+        ves=random.randint(35,120)
+        
+    if ves<=65: ebalo=('young')
+    else: ebalo=random.choice(['young','old'])
+
+    telo=[pricha,borodaebalo,verh,niz,shoes,ves,ebalo]
+    print(telo)
