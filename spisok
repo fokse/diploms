@@ -54,3 +54,52 @@ for telo in range(10):
 
     telo=[pricha,borodaebalo,verh,niz,shoes,ves,ebalo]
     print(telo)
+    
+    ycheniy=0
+    student=0
+    scolnik=0
+    politic=0
+    
+
+
+    if niz=='short':
+        student=student+1
+        scolnik=scolnik+1
+        politic=politic-1
+        ycheniy=ycheniy-1
+    if shoes=='sneakers':
+        student=student+1
+        scolnik=scolnik+1
+        ycheniy=ycheniy+0.5
+        politic=politic-1
+    if shoes=='tufli':
+        politic=politic+1
+        ycheniy=ycheniy+1
+        student=student+0.5
+    if ves<75:
+        if ves<50:
+            scolnik=scolnik+1
+        else: student=student+1
+    else:
+        politic=politic+1
+        ycheniy=ycheniy+1
+    if pricha=='lysina': 
+        politic=politic+1
+        ycheniy=ycheniy+1
+        scolnik=0
+        student=0
+    if ebalo=='old':
+        politic=politic+1
+        ycheniy=ycheniy+1
+        scolnik=0
+        student=0
+    else:
+        student=student+1
+        scolnik=scolnik+1
+    if nalichieboroda==1:
+        politic=politic+1
+        ycheniy=ycheniy+1
+        student=student+0.5
+        scolnik=0
+        
+    print('ycheniy = ', ycheniy,', student = ', student,', scolnik = ', scolnik,', politic = ', politic)
